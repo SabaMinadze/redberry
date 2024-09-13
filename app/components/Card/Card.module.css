@@ -22,5 +22,8 @@
     width: 90px;
     height: 26px;
     border-radius: 15px;
-    transform: translateY(-200px);
+    transform: translateY(-285px);
+    margin-left: 33px;
+    border: none;
+    background-color: gray;
 }
