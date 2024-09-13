@@ -10,22 +10,22 @@ import { faSignsPost } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Card() {
+function Card({price, address, bedrooms, area, zip_code, img}) {
   return (
     <>
     <div className={s.mainCard}>
       <div className={s.imgCard}>
-        <Image src={room} alt={''}/>
+        <Image src={img} alt={''} width={384} height={307}/>
         <button className={s.isRentBtn}>ქირავდება</button>
       </div>
       <div className={s.cardContent}>
           <div className={s.cardContent2}>
-            <h1>80 000 ₾</h1>
-            <h3 className={s.location}><FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '20px' }} /> თბილისი, ი, ჭავჭავაძის 53</h3>
+            <h1>{price} ₾</h1>
+            <h3 className={s.location}><FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '20px' }} /> {address}</h3>
             <div className={s.iconBox}>
-            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faBed} className={s.location}/> 2</h3>
-            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faChartArea} className={s.location}/> 55მ</h3>
-            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faSignsPost} className={s.location}/> 0160</h3>
+            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faBed} className={s.location}/> {bedrooms}</h3>
+            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faChartArea} className={s.location}/> {area}მ²</h3>
+            <h3 className={s.inconStyle}><FontAwesomeIcon icon={faSignsPost} className={s.location}/> {zip_code}</h3>
           </div>
         </div>
       </div>

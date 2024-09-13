@@ -3,4 +3,10 @@
     display: flex;
     margin-top: 20px;
     gap: 60px;
+    
+}
+
+.mainCards5{
+    display: flex;
+    gap: 60px;
 }

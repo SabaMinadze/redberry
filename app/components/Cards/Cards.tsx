@@ -8,15 +8,17 @@ function Cards() {
   return (
     <>
     <div className={s.mainCards}>
-      <div>{data.map(info =>
-        <>
-       <h3>{info.id}</h3>
-       <h3>{info.address}</h3>
-       <h3>{info.price}</h3>
-       <Image src={info.image} alt={'error'} width={100} height={100}/>
-       </>
-    )}</div>
-    <Card/>
+      
+      <div className={s.mainCards5}>{data.map(info => <>
+      <Card price={info.price}
+      address={info.address}
+      bedrooms={info.bedrooms}
+      area={info.area}
+      zip_code={info.zip_code}
+      img={info.image}
+      />
+      </>)}
+      </div>
     </div>
  
 
