@@ -4,6 +4,7 @@ import Card from '../components/Card/Card';
 import data from "../components/Cards/data.json"
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import Image from 'next/image';
 config.autoAddCss = false; // Prevent Font Awesome from adding its own CSS
 
 export async function generateStaticParams() {
@@ -22,6 +23,7 @@ async function CardPage({ params }: { params: { id: string } }) {
   return (
     <div className={s.pageContainer}>
       <h1>Details for Card {cardData.id}</h1>
+      <Image src={cardData.image} alt={''} width={100} height={100}/>
       <Card
         price={cardData.price}
         address={cardData.address}
