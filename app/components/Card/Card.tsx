@@ -1,11 +1,19 @@
 import React from 'react'
-import "./Card.module.css"
+import s from "./Card.module.css"
+import room from "./room1.png"
+import Image from 'next/image'
 
 function Card() {
   return (
     <>
-    <div>
-        <h1>Hello card</h1>
+    <div className={s.mainCard}>
+      <div className={s.imgCard}>
+        <Image src={room} alt={''}/>
+        <button className={s.isRentBtn}>ქირავდება</button>
+      </div>
+      <div className={s.cardContent}>
+
+      </div>
     </div>
     </>
   )

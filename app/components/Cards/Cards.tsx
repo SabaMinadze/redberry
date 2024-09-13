@@ -5,7 +5,9 @@ import Card from '../Card/Card'
 function Cards() {
   return (
     <>
-    <Card/>
+    <div className={s.mainCards}>
+        <Card/>
+    </div>
     </>
   )
 }

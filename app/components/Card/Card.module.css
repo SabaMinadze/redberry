@@ -1,0 +1,26 @@
+.mainCard{
+    width: 384px;
+    height: 455px;
+    background-color: green;
+    border-radius: 15px;
+}
+
+.imgCard{
+    width: 384px;
+    height: 307px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.cardContent{
+    width: 384px;
+    height: 148px;
+    background-color: red;
+}
+
+.isRentBtn{
+    width: 90px;
+    height: 26px;
+    border-radius: 15px;
+    transform: translateY(-200px);
+}
