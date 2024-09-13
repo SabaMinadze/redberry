@@ -27,3 +27,13 @@
     border: none;
     background-color: gray;
 }
+
+.cardContent2{
+    background-color: brown;
+    margin-left: 25px;
+    color: black;
+}
+
+.location{
+    color: grey;
+}
