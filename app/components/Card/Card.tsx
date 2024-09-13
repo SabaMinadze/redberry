@@ -6,7 +6,7 @@ import { faBed, faMapMarkerAlt, faChartArea, faSignsPost } from '@fortawesome/fr
 
 
 interface CardProps {
-  price: number;
+  price: string;
   address: string;
   bedrooms: number;
   area: number;
