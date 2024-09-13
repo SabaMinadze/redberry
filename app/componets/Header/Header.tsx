@@ -4,8 +4,8 @@ import s from "./Header.module.css"
 function Header() {
   return (
     <>
-    <div>
-        <h1>REDBERRY</h1>
+    <div className={s.header}>
+        <h1 className={s.headerTxt}>REDBERRY</h1>
     </div>
     </>
   )
