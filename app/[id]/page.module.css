@@ -5,6 +5,21 @@
     gap: 60px;
 }
 
+.txt{
+    margin-left: 90px;
+}
+
 .pageContainer{
     margin-left: 90px;
+    display: flex;
+}
+
+
+
+.sideBar{
+    width: 503px;
+    height: 520px;
+    background-color: darkblue;
+    margin-left: 68px;
+
 }

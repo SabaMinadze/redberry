@@ -21,18 +21,16 @@ async function CardPage({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className={s.pageContainer}>
-      <h1>Details for Card {cardData.id}</h1>
-      <Image src={cardData.image} alt={''} width={100} height={100}/>
-      <Card
-        price={cardData.price}
-        address={cardData.address}
-        bedrooms={cardData.bedrooms}
-        area={cardData.area}
-        zip_code={cardData.zip_code}
-        img={cardData.image}
-      />
-    </div>
+    <>
+      <h1 className={s.txt}>Details for Card {cardData.id}</h1>
+      <div className={s.pageContainer}>
+        <Image src={cardData.image} alt={''} width={689} height={520}/>
+        <div className={s.sideBar}>
+          <h1>{cardData.price}</h1>
+
+        </div>
+      </div>
+    </>
   );
 }
 
