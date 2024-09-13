@@ -1,0 +1,12 @@
+.subnav{
+    height: 47px;
+    width: 785px;
+    background-color: red;
+}
+
+.subnavUl{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    color: black;
+}
