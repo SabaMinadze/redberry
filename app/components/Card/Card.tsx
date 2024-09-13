@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed } from '@fortawesome/free-solid-svg-icons'; // Use the free solid icon
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faChartArea } from '@fortawesome/free-solid-svg-icons';
+import { faHandPeace } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -24,7 +25,7 @@ function Card() {
           <div className={s.iconBox}>
           <h3 className={s.inconStyle}><FontAwesomeIcon icon={faBed} className={s.location}/> 2</h3>
           <h3 className={s.inconStyle}><FontAwesomeIcon icon={faChartArea} className={s.location}/> 55მ</h3>
-          <h3 className={s.inconStyle}><FontAwesomeIcon icon={faBed} className={s.location}/> 2</h3>
+          <h3 className={s.inconStyle}><FontAwesomeIcon icon={faHandPeace} className={s.location}/> 0160</h3>
           </div>
         </div>
 
