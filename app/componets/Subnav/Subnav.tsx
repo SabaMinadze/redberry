@@ -11,6 +11,9 @@ function Subnav() {
             <li><h2>ფართობი</h2></li>
             <li><h2>საძინებლის რაოდენობა</h2></li>
         </ul>
+        <div className={s.subnav2}>
+            a
+        </div>
     </div>
     </>
   )
