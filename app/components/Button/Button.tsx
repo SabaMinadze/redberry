@@ -3,7 +3,7 @@ import s from "./Button.module.css";
 
 interface ButtonProps {
   title: string;
-  color?: string; // Optional or you can specify "whitening" | string
+  color?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ title, color }) => {
