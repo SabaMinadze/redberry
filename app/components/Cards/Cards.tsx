@@ -7,7 +7,15 @@ function Cards() {
     <>
     <div className={s.mainCards}>
         <Card/>
+        <Card/>
+        <Card/>
     </div>
+    <div className={s.mainCards}>
+        <Card/>
+        <Card/>
+        <Card/>
+    </div>
+
     </>
   )
 }
