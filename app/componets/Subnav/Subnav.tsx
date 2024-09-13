@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 function Subnav() {
   return (
     <>
-    <div className={s.main}>
+    <center><div className={s.main}>
         <div className={s.subnav}>
             <ul className={s.subnavUl}>
                 <li><h2>რეგიონი</h2></li>
@@ -18,7 +18,7 @@ function Subnav() {
             <Button title="+ ლისტინგის დამატება"/>
             <Button title="+ აგენტის დამატება" color="whitening"/>
         </div>
-    </div>
+    </div></center>
     </>
   )
 }

@@ -1,7 +1,6 @@
 .subnav{
     height: 47px;
     width: 785px;
-    background-color: rgb(255, 255, 255);
     margin-left: 100px;
 }
 
@@ -11,15 +10,20 @@
     gap: 24px;
     color: black;
     font-size: 15px;
+    border-radius: 10px;
+    margin-top: 9px;
 }
 
 .test{
     width: 500px;
-    background-color: rgb(36, 21, 239);
+
 }
 
 .main{
     display: flex;
-    height: 47px;
+    height: 50px;
     margin-top: 70px;
+    width: 1350px;
+    border: 2px solid grey;
+    border-radius: 10px;
 }
