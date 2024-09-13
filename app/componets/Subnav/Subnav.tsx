@@ -1,5 +1,6 @@
 import React from 'react'
 import s from "./Subnav.module.css"
+import Button from '../Button/Button'
 
 function Subnav() {
   return (
@@ -14,8 +15,8 @@ function Subnav() {
             </ul>
         </div>
         <div  className={s.test}>
-            <button>+ ლისტინგის დამატება</button>
-            <button>+ აგენტის დამატება</button>
+            <Button title="+ ლისტინგის დამატება"/>
+            <Button title="+ აგენტის დამატება" color="whitening"/>
         </div>
     </div>
     </>
