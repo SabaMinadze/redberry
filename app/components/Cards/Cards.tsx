@@ -1,7 +1,6 @@
 import React from 'react'
 import s from "./Cards.module.css"
 import data from "./data.json"
-import Image from 'next/image'
 import Card from '../Card/Card'
 
 function Cards() {

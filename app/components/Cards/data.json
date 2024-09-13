@@ -27,6 +27,26 @@
       "area": 100.5,
       "bedrooms": 3,
       "is_rental": 0,
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482241348.jpg?k=b2b224709fdec8df749e7914ec9b99d6d06334199d22234e70b7033652124c54&o=&hp=1",
+      "city_id": 1,
+      "city": {
+        "id": 1,
+        "name": "სოხუმი",
+        "region_id": 1,
+        "region": {
+          "id": 1,
+          "name": "აფხაზეთი"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "address": "შარტავას 2ა",
+      "zip_code": "0101",
+      "price": 100000,
+      "area": 100.5,
+      "bedrooms": 3,
+      "is_rental": 0,
       "image": "https://api.real-estate-manager.redberryinternship.ge/storage/agent_avatars/KXhmcUIaDo7TTkgfCBraeUhx3Nd6eTKrmsXOWkPh.png",
       "city_id": 1,
       "city": {
