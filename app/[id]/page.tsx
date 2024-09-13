@@ -9,7 +9,7 @@ config.autoAddCss = false; // Prevent Font Awesome from adding its own CSS
 
 export async function generateStaticParams() {
   return data.map((info) => ({
-    id: info.id.toString(),
+    id: info.id.toString(),   
   }));
 }
 

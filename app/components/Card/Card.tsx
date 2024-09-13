@@ -14,7 +14,7 @@ function Card({price, address, bedrooms, area, zip_code, img}) {
     <>
     <div className={s.mainCard}>
       <div className={s.imgCard}>
-        <Image src={img} alt={''} width={384} height={307}/>
+        <Image src={img} alt={''} width={384} height={307} className={s.img}/>
         <button className={s.isRentBtn}>ქირავდება</button>
       </div>
       <div className={s.cardContent}>
