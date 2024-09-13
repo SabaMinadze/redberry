@@ -1,5 +1,6 @@
 import React from 'react'
 import s from "./Button.module.css"
+import Card from '../Card/Card'
 
 function Button(props:any) {
   return (

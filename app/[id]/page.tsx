@@ -1,15 +1,16 @@
 import React from 'react'
-import Subnav from './components/Subnav/Subnav'
-import Cards from './components/Cards/Cards'
+import s from "./page.module.css"
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import Card from '../components/Card/Card';
 config.autoAddCss = false; // Prevent Font Awesome from adding its own CSS
 
-function page() {
+
+function page({params}) {
   return (
     <>
-    <Subnav/>
-    <Cards/>
+      <h1>Hello {params.id}</h1>
+      <Card/>
     </>
   )
 }
