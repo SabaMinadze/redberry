@@ -2,7 +2,7 @@
     height: 47px;
     width: 785px;
     background-color: rgb(255, 255, 255);
-    margin-top: 70px;
+    margin-left: 100px;
 }
 
 .subnavUl{
@@ -10,4 +10,16 @@
     list-style: none;
     gap: 24px;
     color: black;
+    font-size: 15px;
+}
+
+.test{
+    width: 500px;
+    background-color: rgb(36, 21, 239);
+}
+
+.main{
+    display: flex;
+    height: 47px;
+    margin-top: 70px;
 }
