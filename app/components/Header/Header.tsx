@@ -3,7 +3,6 @@ import s from "./Header.module.css"
 import logo from "./logo.png"
 import Image from 'next/image'
 import Link from 'next/link'
-import Card from '../Card/Card'
 
 function Header() {
   return (
