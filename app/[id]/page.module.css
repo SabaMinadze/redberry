@@ -19,7 +19,20 @@
 .sideBar{
     width: 503px;
     height: 520px;
-    background-color: darkblue;
+    background-color: white;
     margin-left: 68px;
+}
 
+.price{
+    color: black;
+    font-size: 35px;
+}
+
+.icons{
+    color: gray;
+}
+
+.txt2{
+    margin-top: 20px;
+    font-family: 500;
 }
