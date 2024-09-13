@@ -1,6 +1,5 @@
 import React from 'react'
 import s from "./Card.module.css"
-import room from "./room1.png"
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed } from '@fortawesome/free-solid-svg-icons'; // Use the free solid icon

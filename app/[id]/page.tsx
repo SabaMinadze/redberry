@@ -1,18 +1,38 @@
-import React from 'react'
-import s from "./page.module.css"
+import React from 'react';
+import s from './page.module.css';
+import Card from '../components/Card/Card';
+import data from "../components/Cards/data.json"
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Card from '../components/Card/Card';
 config.autoAddCss = false; // Prevent Font Awesome from adding its own CSS
 
-
-function page({params}) {
-  return (
-    <>
-      <h1>Hello {params.id}</h1>
-      <Card/>
-    </>
-  )
+export async function generateStaticParams() {
+  return data.map((info) => ({
+    id: info.id.toString(),
+  }));
 }
 
-export default page
+async function CardPage({ params }: { params: { id: string } }) {
+  const cardData = data.find((info) => info.id.toString() === params.id);
+
+  if (!cardData) {
+    return <p>Card not found</p>;
+  }
+
+  return (
+    <div className={s.pageContainer}>
+      <h1>Details for Card {cardData.id}</h1>
+      <Card
+        price={cardData.price}
+        address={cardData.address}
+        bedrooms={cardData.bedrooms}
+        area={cardData.area}
+        zip_code={cardData.zip_code}
+        img={cardData.image}
+      />
+    </div>
+  );
+}
+
+export default CardPage;
+
