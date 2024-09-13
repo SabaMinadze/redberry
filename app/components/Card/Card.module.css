@@ -1,21 +1,19 @@
 .mainCard{
     width: 384px;
     height: 455px;
-    background-color: green;
     border-radius: 15px;
+    background-color: white;
 }
 
 .imgCard{
     width: 384px;
     height: 307px;
-    background-color: blue;
     border-radius: 15px;
 }
 
 .cardContent{
     width: 384px;
     height: 148px;
-    background-color: red;
 }
 
 .isRentBtn{
@@ -29,11 +27,22 @@
 }
 
 .cardContent2{
-    background-color: brown;
     margin-left: 25px;
     color: black;
+    margin-top: 15px;
 }
 
-.location{
+.location1{
     color: grey;
+    margin-top: 10px;
+}
+
+.location2{
+    color: grey;
+}
+
+.iconBox{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
 }
