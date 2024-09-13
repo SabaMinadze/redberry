@@ -34,6 +34,7 @@ async function CardPage({ params }: { params: { id: string } }) {
             <h3 className={s.txt2}><FontAwesomeIcon icon={faChartArea} style={{ fontSize: '20px' }} /> ფართობი {cardData.area} მ²</h3>
             <h3 className={s.txt2}><FontAwesomeIcon icon={faBed} style={{ fontSize: '20px' }} /> საძინებელი {cardData.bedrooms}</h3>
             <h3 className={s.txt2}><FontAwesomeIcon icon={faSignsPost} style={{ fontSize: '20px' }} /> საფოსტო ინდექსი {cardData.zip_code}</h3>
+            <p className={s.txt3}>იყიდება ბინა {cardData.address}ზე, ვაკეში {cardData.city.name}. ბინა არის ახალი რემონტით, {cardData.bedrooms} საძინებლითა და დიდი აივნებით. მოწყობილია ავეჯითა და ტექნიკით</p>
           </div>
         </div>
       </div>
