@@ -7,7 +7,6 @@ import Image from 'next/image';
 config.autoAddCss = false; // Prevent Font Awesome from adding its own CSS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed, faMapMarkerAlt, faChartArea, faSignsPost } from '@fortawesome/free-solid-svg-icons';
-import Cards from '../components/Cards/Cards';
 
 
 export async function generateStaticParams() {
@@ -40,8 +39,6 @@ async function CardPage({ params }: { params: { id: string } }) {
         </div>
       </div>
       <div className={s.otherApartmentsBox}>
-      <h1 className={s.other}>ბინები მსგავს ლოკაციაზე</h1>
-      <Cards/>
       </div>
     </>
   );
