@@ -2,6 +2,11 @@
     color: black;
 }
 
+.txt1{
+    color: black;
+    font-size: 30px;
+}
+
 
 .box{
     height: 1211px;
@@ -39,5 +44,9 @@
 
 .title3{
     margin-left: 320px;
+}
+
+.title4{
+    margin-left: 350px;
 
 }

@@ -11,13 +11,14 @@ function Page() {
     const [zipcode, setZipcode] = useState("");
     const [region, setRegion] = useState("");
     const [city, setCity] = useState("");
+    const [price, setPrice] = useState()
     const [formDataArray, setFormDataArray] = useState(data); // Use initial data here
     const router = useRouter();
 
     function handleSubmit(e) {
         e.preventDefault();
 
-        const newData = { address, zipcode, region, city };
+        const newData = { address, zipcode, region, city, price };
         
         // Update the form data array with new data
         const existingData = JSON.parse(localStorage.getItem('formDataArray')) || [];
@@ -66,6 +67,30 @@ function Page() {
                                 required
                                 className={s.inpt}
                                 onChange={(e) => setRegion(e.target.value)}
+                            /><br />
+                            <input
+                                type="text"
+                                name="city"
+                                required
+                                className={s.inpt}
+                                onChange={(e) => setCity(e.target.value)}
+                            />
+                        </div>
+                        <br />
+
+                        <br /><br /><br />
+                        <h1 className={s.txt1}>ბინის დეტალები</h1>
+                        <div className={s.flexBox}>
+                            <label htmlFor="" className={s.title2}>ფასი</label><br />
+                            <label htmlFor="" className={s.title4}>ფართობი</label><br />
+                        </div>
+                        <div className={s.flexBox}>
+                            <input
+                                type="text"
+                                name="region"
+                                required
+                                className={s.inpt}
+                                onChange={(e) => setPrice(e.target.value)}
                             /><br />
                             <input
                                 type="text"

@@ -1,26 +1,40 @@
 .addedBox {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    gap: 16px; /* Space between cards */
-    padding: 16px;
-    margin-left: 70px;
-    gap: 70px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background: #fff; /* Card background color */
-    border: 1px solid #ddd; /* Card border color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    width: 387.5px; /* Fixed width for each card */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-  }
-  
-  .card h1 {
-    font-size: 26px; /* Font size for the text */
-    margin: 8px 0; /* Margin between each line */
-    color: #333; /* Text color */
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 16px; /* Space between cards */
+  padding: 16px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff; /* Card background color */
+  border: 1px solid #ddd; /* Card border color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  width: 387.5px; /* Fixed width for each card */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.card h1 {
+  font-size: 26px; /* Font size for the text */
+  margin: 8px 0; /* Margin between each line */
+  color: gray; /* Default text color for h1 */
+}
+
+.card h2 {
+  font-size: 26px; /* Font size for the text */
+  margin: 8px 0; /* Margin between each line */
+  color: rgb(0, 0, 0); /* Default text color for h1 */
+}
+
+.price {
+  color: rgb(154, 23, 23); /* Text color specifically for price */
+}
+
+.iconBox {
+  display: flex;
+  gap: 20px;
+  font-size: 20px; /* Adjusted font size for icons */
+}
