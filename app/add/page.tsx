@@ -18,13 +18,9 @@ function Page() {
 
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-
         const newData = { address, zipcode, region, city, price, area, bedroomQuantity };
-
         const existingData = JSON.parse(localStorage.getItem('formDataArray') || '[]');
-
         localStorage.setItem('formDataArray', JSON.stringify([...existingData, newData]));
-
         router.push("/");
     }
 
