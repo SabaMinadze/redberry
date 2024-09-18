@@ -22,12 +22,12 @@ function Page() {
     <div className={s.addedBox}>
         {lists.length > 0 ? (
           lists.map((q, index) => (
-            <>
+            <div className={s.card} key={index}>
               <h1 key={index}>address: {q.address}</h1>
               <h1 key={index}>zipcode: {q.zipcode}</h1>
               <h1 key={index}>region: {q.region}</h1>
               <h1 key={index}>city: {q.city}</h1>
-            </>
+            </div>
                  ))
               ) : (
                   <h1>No data available</h1>
