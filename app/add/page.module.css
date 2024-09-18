@@ -5,13 +5,13 @@
 .txt1{
     color: black;
     font-size: 30px;
+    font-weight: 600;
 }
 
 
 .box{
     height: 1211px;
     width: 790px;
-    background-color: darkgreen;
     margin-left: 373px;
 }
 
@@ -36,17 +36,26 @@
 
 .title1{
     margin-left: 310px;
+    color: black;
+    font-weight: 600;
+    
 }
 
 .title2{
     margin-left: 5px;
+    color: black;
+    font-weight: 600;
 }
 
 .title3{
     margin-left: 320px;
+    color: black;
+    font-weight: 600;
 }
 
 .title4{
     margin-left: 350px;
+    color: black;
+    font-weight: 600;
 
 }

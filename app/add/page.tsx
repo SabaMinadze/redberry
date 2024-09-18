@@ -12,13 +12,15 @@ function Page() {
     const [region, setRegion] = useState("");
     const [city, setCity] = useState("");
     const [price, setPrice] = useState()
+    const [area, setArea] = useState()
+    const [bedroomQuantity, setBedroomQuantity] = useState()
     const [formDataArray, setFormDataArray] = useState(data); // Use initial data here
     const router = useRouter();
 
     function handleSubmit(e) {
         e.preventDefault();
 
-        const newData = { address, zipcode, region, city, price };
+        const newData = { address, zipcode, region, city, price, area, bedroomQuantity};
         
         // Update the form data array with new data
         const existingData = JSON.parse(localStorage.getItem('formDataArray')) || [];
@@ -97,8 +99,23 @@ function Page() {
                                 name="city"
                                 required
                                 className={s.inpt}
-                                onChange={(e) => setCity(e.target.value)}
+                                onChange={(e) => setArea(e.target.value)}
                             />
+                        </div>
+                        <br />
+
+                        <br />
+                        <div className={s.flexBox}>
+                            <label htmlFor="" className={s.title2}>საძინებლის რაოდენობა*</label><br />
+                        </div>
+                        <div className={s.flexBox}>
+                            <input
+                                type="text"
+                                name="region"
+                                required
+                                className={s.inpt}
+                                onChange={(e) => setBedroomQuantity(e.target.value)}
+                            /><br />
                         </div>
                         <br />
                         <center><Button title='დაამატე ლისტინგი'/></center>

@@ -38,3 +38,14 @@
   gap: 20px;
   font-size: 20px; /* Adjusted font size for icons */
 }
+
+.card .region{
+  color: black;
+}
+
+.card .adress{
+  font-size: 20px;
+
+}
+
+
