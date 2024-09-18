@@ -7,7 +7,7 @@ interface ButtonProps {
   onClick?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, color, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ title, color}) => {
   return (
     <button
       className={s.btn}
@@ -16,7 +16,6 @@ const Button: React.FC<ButtonProps> = ({ title, color, onClick }) => {
         color: color === "whitening" ? "#F93B1D" : undefined,
         border: color === "whitening" ? "2px solid #F93B1D" : undefined,
       }}
-      onClick={onClick}
     >
       {title}
     </button>
