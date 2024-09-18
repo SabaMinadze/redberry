@@ -19,6 +19,7 @@ function Page() {
   return (
     <>
     <Subnav/>
+    <Cards/>
 
     <div className={s.addedBox}>
         {lists.length > 0 ? (

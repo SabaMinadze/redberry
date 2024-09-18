@@ -1,7 +1,7 @@
 .addedBox {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
-  gap: 16px; /* Space between cards */
+  gap: 70px; /* Space between cards */
   padding: 16px;
   margin-left: 70px;
   margin-top: 20px;
