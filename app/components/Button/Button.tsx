@@ -4,9 +4,10 @@ import s from "./Button.module.css";
 interface ButtonProps {
   title: string;
   color?: string;
+  onClick?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, color }) => {
+const Button: React.FC<ButtonProps> = ({ title, color, onClick }) => {
   return (
     <button
       className={s.btn}
@@ -15,6 +16,7 @@ const Button: React.FC<ButtonProps> = ({ title, color }) => {
         color: color === "whitening" ? "#F93B1D" : undefined,
         border: color === "whitening" ? "2px solid #F93B1D" : undefined,
       }}
+      onClick={onClick}
     >
       {title}
     </button>

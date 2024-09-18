@@ -16,7 +16,7 @@ function Subnav() {
             </ul>
         </div>
         <div  className={s.test}>
-            <Link href="/listingidaemata"><Button title="+ ლისტინგის დამატება"/></Link>
+            <Link href="/add"><Button title="+ ლისტინგის დამატება"/></Link>
             <Button title="+ აგენტის დამატება" color="whitening"/>
         </div>
     </div></center>
