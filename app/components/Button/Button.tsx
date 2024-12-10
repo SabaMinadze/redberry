@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Button.module.css";
+import styles from "./Button.module.css";
 
 interface ButtonProps {
   title: string;
@@ -8,15 +8,16 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ title, color}) => {
+    const classes = [styles.btn]
+
+    if(color == "whitening") {
+        classes.push(styles.whitening)
+    }
+    
+    
   return (
     <button
-      className={s.btn}
-      style={{
-        backgroundColor: color === "whitening" ? "white" : undefined,
-        color: color === "whitening" ? "#F93B1D" : undefined,
-        border: color === "whitening" ? "2px solid #F93B1D" : undefined,
-      }}
-    >
+      className={classes.join(' ')}>
       {title}
     </button>
   );

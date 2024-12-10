@@ -6,6 +6,8 @@ import Subnav from './components/Subnav/Subnav';
 import Cards from './components/Cards/Cards';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed, faMapMarkerAlt, faChartArea, faSignsPost } from '@fortawesome/free-solid-svg-icons';
+import Button2 from './components/Button2/Button2';
+import Button from './components/Button/Button';
 
 // Define the type for the data stored in localStorage
 interface Listing {
@@ -53,6 +55,11 @@ function Page() {
           <h1>ბინები არ არის დამატებული</h1>
         )}
       </div>
+      <br /><br /><br /><br /><br /><br />
+      <center><Button2 title="რეგისტრაცია" color='whitening'/></center>
+      <br /><br />
+      <center><Button title="ღილაკი" color='whitening'/></center>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
   );
 }

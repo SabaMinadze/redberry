@@ -12,3 +12,9 @@
     cursor: pointer;
     color: white;   
 }
+
+.whitening{
+    background-color: white;
+    color: #F93B1D;
+    border: 2px solid #F93B1D;
+}
