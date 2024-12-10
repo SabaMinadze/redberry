@@ -6,8 +6,6 @@ import Subnav from './components/Subnav/Subnav';
 import Cards from './components/Cards/Cards';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBed, faMapMarkerAlt, faChartArea, faSignsPost } from '@fortawesome/free-solid-svg-icons';
-import Button2 from './components/Button2/Button2';
-import Button from './components/Button/Button';
 
 // Define the type for the data stored in localStorage
 interface Listing {
