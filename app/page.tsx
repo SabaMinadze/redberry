@@ -55,11 +55,6 @@ function Page() {
           <h1>ბინები არ არის დამატებული</h1>
         )}
       </div>
-      <br /><br /><br /><br /><br /><br />
-      <center><Button2 title="რეგისტრაცია" color='whitening'/></center>
-      <br /><br />
-      <center><Button title="ღილაკი" color='whitening'/></center>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
   );
 }
